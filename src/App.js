@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SearchPage from "./SearchPage";
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://cse.google.com/cse.js?cx=b64f1a9f9446e4e53";
+    script.async = false;
+
+    document.body.appendChild(script);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/search" element={<SearchPage />}></Route>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+        {/* <h1>Hey! Clever programmer, let's build Google Clone 😊🚀!</h1> */}
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+//Switch is replaced by Routes in v6 rrdom
