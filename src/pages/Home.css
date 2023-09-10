@@ -1,9 +1,9 @@
 .home {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  height: 10000vh;
+  height: 100vh;
   background: red;
-  padding: 80px 90px; */
+  padding: 80px 90px; 
 }
 
 .home__header {
@@ -46,5 +46,5 @@
 
 .home__body > img {
   object-fit: contain;
-  height: 100px;
+  height: 80px;
 }

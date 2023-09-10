@@ -14,7 +14,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 export default function SearchPage() {
   //Suppose we just pushed some value in the data and then lets check if value came through
   //So whenever we grab a value from the data layer it gives us the state and the dispatch
-  const [{ term }, ] = useStateValue();
+  const [{ term }] = useStateValue();
   //{term} this means get me the search term which we put inside state
 
   //LIVE API CALL
@@ -25,11 +25,7 @@ export default function SearchPage() {
     <div className="searchPage">
       <div className="searchPage__header">
         <Link to="/">
-          <img
-            className="searchPage_logo"
-            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-            alt=""
-          />
+          <img className="searchPage_logo" src={require("./logo.png")} alt="" />
         </Link>
         {/* we are using link tag and not a tag because if we use a  */}
         <div className="searchPage__headerBody">
