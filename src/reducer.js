@@ -14,10 +14,11 @@ export const actionTypes = {
   SET_SEARCH_TERM: "SET_SEARCH_TERM",
 };
 
-//state is the state of the data  layer and action is what we are dispatching into the data layer
   
 const reducer = (state, action) => {
   console.log(action);
+
+//state is the state of the data  layer and action is what we are dispatching into the data layer
 
   switch (action.type) {
     case actionTypes.SET_SEARCH_TERM:
