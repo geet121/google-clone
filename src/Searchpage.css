@@ -100,3 +100,6 @@
 .searchPage__resultSnippet {
   margin-top: 10px;
 }
+
+@media only screen and (max-device-width: 480px) {
+}
