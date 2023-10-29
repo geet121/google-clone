@@ -10,6 +10,9 @@ import ImageIcon from "@mui/icons-material/Image";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import RoomIcon from "@mui/icons-material/Room";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import AppsIcon from "@mui/icons-material/Apps";
+import { Avatar } from "@mui/material";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 export default function SearchPage() {
   //Suppose we just pushed some value in the data and then lets check if value came through
@@ -28,6 +31,7 @@ export default function SearchPage() {
           <img className="searchPage_logo" src={require("./logo.png")} alt="" />
         </Link>
         {/* we are using link tag and not a tag because if we use a  */}
+
         <div className="searchPage__headerBody">
           <Search hideButtons />
 
@@ -67,6 +71,11 @@ export default function SearchPage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="headerRight">
+          <SettingsIcon />
+          <AppsIcon />
+          <Avatar />
         </div>
       </div>
       {true && (

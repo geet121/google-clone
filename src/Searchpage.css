@@ -5,7 +5,7 @@
   background-color: white;
   z-index: 100;
   align-items: flex-start;
-  padding: 30px;
+  padding: 10px;
   border-bottom: 1px solid yellow;
 }
 
@@ -102,4 +102,12 @@
 }
 
 @media only screen and (max-device-width: 480px) {
+}
+
+.headerRight {
+  float: right;
+  margin-left: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -26,7 +26,7 @@ function Home() {
           <AppsIcon />
           {/* <GetAppIcon /> */}
           <Avatar />
-          {/* Avatar--> this gives the person inside a circle icon  */}
+          {/* Avatar--> this gives a person inside a circle icon  */}
         </div>
       </div>
 
@@ -35,7 +35,8 @@ function Home() {
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           alt=""
         />
-        <img src={require("../logo.png")} alt="" />
+        {/* <img src={require("../logo.png")} alt="" />  */}
+        {/* my name image */}
         <div className="home__inputContainer"></div>
         <Search />
       </div>

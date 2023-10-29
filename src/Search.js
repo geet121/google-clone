@@ -7,7 +7,9 @@ import { useNavigate } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
 
-function Search({ hideButtons = false }) {
+function 
+
+Search({ hideButtons = false }) {
   const [{}, dispatch] = useStateValue(); // after-->reducer.js
 
   const [input, setInput] = useState(""); //to keep track of the input text we use state
@@ -66,3 +68,5 @@ function Search({ hideButtons = false }) {
 }
 
 export default Search;
+
+//  --> StateProvider.js
